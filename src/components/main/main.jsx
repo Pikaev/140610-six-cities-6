@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import PlaceСard from '../placeСard/placeСard';
 
-const offersArr = [1, 2, 3, 4, 5];
+const offers = [1, 2, 3, 4, 5];
 
 const Main = (props) => {
   const {numberOfOffers} = props;
@@ -95,7 +95,7 @@ const Main = (props) => {
                     </ul>
                   </form>
                   <div className="cities__places-list places__list tabs__content">
-                    {offersArr.map((offer, i) => <PlaceСard key={`offer${i}`} />)}
+                    {offers.map((offer, i) => <PlaceСard key={`offer${i}`} />)}
                   </div>
                 </section>
                 <div className="cities__right-section">
