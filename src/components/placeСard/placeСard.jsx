@@ -1,6 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const PlaceСard = () => {
+const PlaceСard = (props) => {
+  const {offers, reviews} = props;
+
   return (
     <article className="cities__place-card place-card">
       <div className="place-card__mark">
@@ -43,6 +46,11 @@ const PlaceСard = () => {
       </div>
     </article>
   );
+};
+
+PlaceСard.propTypes = {
+  offers: PropTypes.array.isRequired,
+  reviews: PropTypes.array.isRequired
 };
 
 export default PlaceСard;

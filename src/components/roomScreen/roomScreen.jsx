@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import HeaderLogo from "../headerLogo/headerLogo";
 
 const RoomScreen = () => {
@@ -329,6 +331,9 @@ const RoomScreen = () => {
       </div>
     </React.Fragment>
   );
+};
+
+RoomScreen.propTypes = {
 };
 
 export default RoomScreen;

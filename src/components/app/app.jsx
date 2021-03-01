@@ -9,7 +9,7 @@ import RoomScreen from '../roomScreen/roomScreen';
 import SignInScreen from '../signInScreen/signInScreen';
 
 const App = (props) => {
-  const {numberOfOffers} = props;
+  const {numberOfOffers, offers, reviews} = props;
 
   return (
     <BrowserRouter>
@@ -38,7 +38,9 @@ const App = (props) => {
 };
 
 App.propTypes = {
-  numberOfOffers: PropTypes.number.isRequired
+  numberOfOffers: PropTypes.number.isRequired,
+  offers: PropTypes.array.isRequired,
+  reviews: PropTypes.array.isRequired
 };
 
 export default App;

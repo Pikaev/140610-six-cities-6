@@ -1,7 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
-import PlaceСard from "../placeСard/placeСard";
-import HeaderLogo from "../headerLogo/headerLogo";
+import React from 'react';
+import PropTypes from 'prop-types';
+// import PlaceСard from '../placeСard/placeСard';
+import HeaderLogo from '../headerLogo/headerLogo';
+
+import PlaceСardList from '../placeСardList/placeСardList';
 
 const offers = [1, 2, 3, 4, 5];
 
@@ -129,7 +131,7 @@ const MainScreen = (props) => {
                 </form>
                 <div className="cities__places-list places__list tabs__content">
                   {offers.map((offer, i) => (
-                    <PlaceСard key={`offer${i}`} />
+                    <PlaceСardList key={`offer${i}`} />
                   ))}
                 </div>
               </section>
