@@ -14,7 +14,7 @@ export default [
     "is_premium": false,
     "max_adults": 4,
     "preview_image": `img/1.png`,
-    "price": 120,
+    "price": 200,
     "rating": 4.8,
     "title": `Beautiful & luxurious studio at great location`,
     "type": `apartment`
@@ -28,7 +28,7 @@ export default [
       },
       "name": `Paris`
     },
-    "id": 1,
+    "id": 2,
     "images": [`img/1.png`, `img/2.png`],
     "is_favorite": false,
     "is_premium": false,
@@ -48,7 +48,7 @@ export default [
       },
       "name": `Brussels`
     },
-    "id": 1,
+    "id": 3,
     "images": [`img/1.png`, `img/2.png`],
     "is_favorite": false,
     "is_premium": false,
@@ -68,7 +68,7 @@ export default [
       },
       "name": `Hamburg`
     },
-    "id": 1,
+    "id": 4,
     "images": [`img/1.png`, `img/2.png`],
     "is_favorite": false,
     "is_premium": false,

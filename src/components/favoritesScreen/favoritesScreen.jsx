@@ -1,7 +1,8 @@
 import React from "react";
 import HeaderLogo from "../headerLogo/headerLogo";
 
-const FavoritesScreen = () => {
+const FavoritesScreen = (props) => {
+  const {offers, reviews} = props;
   return (
     <React.Fragment>
       <div style={{display: `none`}}>

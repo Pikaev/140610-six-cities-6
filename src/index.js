@@ -11,7 +11,7 @@ const Places = {
 ReactDOM.render(
     <App
       numberOfOffers={Places.NUMBER_OF_OFFERS}
-      offer={offers}
+      offers={offers}
       reviews={reviews}
     />,
     document.querySelector(`#root`)

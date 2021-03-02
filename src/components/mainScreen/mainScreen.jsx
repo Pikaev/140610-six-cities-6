@@ -5,10 +5,10 @@ import HeaderLogo from '../headerLogo/headerLogo';
 
 import PlaceСardList from '../placeСardList/placeСardList';
 
-const offers = [1, 2, 3, 4, 5];
+// const offers = [1, 2, 3, 4, 5];
 
 const MainScreen = (props) => {
-  const {numberOfOffers} = props;
+  const {numberOfOffers, offers, reviews} = props;
   return (
     <React.Fragment>
       <div style={{display: `none`}}>
@@ -130,9 +130,7 @@ const MainScreen = (props) => {
                   </ul>
                 </form>
                 <div className="cities__places-list places__list tabs__content">
-                  {offers.map((offer, i) => (
-                    <PlaceСardList key={`offer${i}`} />
-                  ))}
+                  <PlaceСardList offers={offers}/>
                 </div>
               </section>
               <div className="cities__right-section">
@@ -148,6 +146,8 @@ const MainScreen = (props) => {
 
 MainScreen.propTypes = {
   numberOfOffers: PropTypes.number.isRequired,
+  offers: PropTypes.array.isRequired,
+  reviews: PropTypes.array.isRequired
 };
 
 export default MainScreen;

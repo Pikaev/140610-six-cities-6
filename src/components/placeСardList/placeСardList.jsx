@@ -5,11 +5,17 @@ import PlaceCard from '../placeСard/placeСard';
 
 const PlaceCardList = (props) => {
   const {offers, reviews} = props;
+  const [activeСard, setActiveCard] = useState({});
 
   return (
-    <React.Fragment>
-      <PlaceCard />
-    </React.Fragment>
+    <>
+      {offers.map((offer, i) => (
+        <PlaceCard
+          offers={offers}
+          key={`${offers[i].id}`}
+        />
+      ))}
+    </>
   );
 };
 
