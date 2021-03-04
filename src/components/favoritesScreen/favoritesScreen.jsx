@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from 'prop-types';
+
 import FavoritesCardList from "../favoritesCardList/favoritesCardList";
 import HeaderLogo from "../headerLogo/headerLogo";
 
@@ -52,6 +54,10 @@ const FavoritesScreen = (props) => {
       </div>
     </React.Fragment>
   );
+};
+
+FavoritesScreen.propTypes = {
+  offers: PropTypes.array.isRequired,
 };
 
 export default FavoritesScreen;

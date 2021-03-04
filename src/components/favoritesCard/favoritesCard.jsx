@@ -71,13 +71,11 @@ const FavoritesCard = ({
   );
 };
 
-FavoritesCard.PropTypes = {
+FavoritesCard.propTypes = {
   apartImage: PropTypes.string.isRequired,
   cityName: PropTypes.string.isRequired,
   isFavorite: PropTypes.bool.isRequired,
-  offers: PropTypes.array.isRequired,
   price: PropTypes.number.isRequired,
-  reviews: PropTypes.array.isRequired,
   rating: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,

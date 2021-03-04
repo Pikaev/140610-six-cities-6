@@ -30,6 +30,7 @@ PlaceCardList.propTypes = {
   isFavorite: PropTypes.bool.isRequired,
   isPremium: PropTypes.bool.isRequired,
   key: PropTypes.number.isRequired,
+  offers: PropTypes.array.isRequired,
   previewImage: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
   rating: PropTypes.number.isRequired,

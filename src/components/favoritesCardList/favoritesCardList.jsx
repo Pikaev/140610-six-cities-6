@@ -7,9 +7,9 @@ const FavoritesCardList = ({offers}) => {
 
   return (
     <>
-      {offers.map((offer) => (
+      {offers.map((offer, i) => (
         <FavoritesCard
-          apartImage={offer.images}
+          apartImage={offer.images[i]}
           cityName={offer.city.name}
           id={offer.id}
           isFavorite={offer.is_favorite}
@@ -28,7 +28,6 @@ const FavoritesCardList = ({offers}) => {
 
 FavoritesCardList.propTypes = {
   offers: PropTypes.array.isRequired,
-  reviews: PropTypes.array.isRequired
 };
 
 export default FavoritesCardList;

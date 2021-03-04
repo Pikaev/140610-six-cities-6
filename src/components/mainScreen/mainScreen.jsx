@@ -144,7 +144,6 @@ const MainScreen = (props) => {
 MainScreen.propTypes = {
   numberOfOffers: PropTypes.number.isRequired,
   offers: PropTypes.array.isRequired,
-  reviews: PropTypes.array.isRequired
 };
 
 export default MainScreen;
