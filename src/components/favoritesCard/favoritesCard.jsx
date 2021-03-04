@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {Link} from 'react-router-dom';
 
 const FavoritesCard = ({
   apartImage,
@@ -23,7 +24,7 @@ const FavoritesCard = ({
       <div className="favorites__places">
         <article className="favorites__card place-card">
           <div className="favorites__image-wrapper place-card__image-wrapper">
-            <a href="#">
+            <Link to="/offer">
               <img
                 className="place-card__image"
                 src={apartImage}
@@ -31,7 +32,7 @@ const FavoritesCard = ({
                 height="110"
                 alt="Place image"
               />
-            </a>
+            </Link>
           </div>
           <div className="favorites__card-info place-card__info">
             <div className="place-card__price-wrapper">
@@ -61,7 +62,7 @@ const FavoritesCard = ({
               </div>
             </div>
             <h2 className="place-card__name">
-              <a href="#">{title}</a>
+              <Link to="/offer">{title}</Link>
             </h2>
             <p className="place-card__type">{type}</p>
           </div>
