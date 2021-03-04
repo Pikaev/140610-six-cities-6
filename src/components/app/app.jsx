@@ -9,7 +9,7 @@ import RoomScreen from '../roomScreen/roomScreen';
 import SignInScreen from '../signInScreen/signInScreen';
 
 const App = (props) => {
-  const {numberOfOffers, offers, reviews} = props;
+  const {numberOfOffers, offers} = props;
 
   return (
     <BrowserRouter>

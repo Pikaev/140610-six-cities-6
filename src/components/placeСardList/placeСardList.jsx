@@ -3,16 +3,22 @@ import PropTypes from 'prop-types';
 
 import PlaceCard from '../placeСard/placeСard';
 
-const PlaceCardList = (props) => {
-  const {offers, reviews} = props;
+const PlaceCardList = ({offers}) => {
   const [activeСard, setActiveCard] = useState({});
 
   return (
     <>
-      {offers.map((offer, i) => (
+      {offers.map((offer) => (
         <PlaceCard
-          offers={offers}
-          key={`${offers[i].id}`}
+          id={offer.id}
+          isFavorite={offer.is_favorite}
+          isPremium={offer.is_premium}
+          key={offer.id}
+          previewImage={offer.preview_image}
+          price={offer.price}
+          rating={offer.rating}
+          title={offer.title}
+          type={offer.type}
         />
       ))}
     </>
@@ -20,8 +26,15 @@ const PlaceCardList = (props) => {
 };
 
 PlaceCardList.propTypes = {
-  offers: PropTypes.array.isRequired,
-  reviews: PropTypes.array.isRequired
+  id: PropTypes.number.isRequired,
+  isFavorite: PropTypes.bool.isRequired,
+  isPremium: PropTypes.bool.isRequired,
+  key: PropTypes.number.isRequired,
+  previewImage: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  rating: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired
 };
 
 export default PlaceCardList;

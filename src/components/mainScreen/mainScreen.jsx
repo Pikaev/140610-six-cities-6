@@ -1,14 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import PlaceСard from '../placeСard/placeСard';
-import HeaderLogo from '../headerLogo/headerLogo';
 
+import HeaderLogo from '../headerLogo/headerLogo';
 import PlaceСardList from '../placeСardList/placeСardList';
 
-// const offers = [1, 2, 3, 4, 5];
-
 const MainScreen = (props) => {
-  const {numberOfOffers, offers, reviews} = props;
+  const {numberOfOffers, offers} = props;
   return (
     <React.Fragment>
       <div style={{display: `none`}}>
